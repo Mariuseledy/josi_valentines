@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+body {
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#anchor_main {
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    padding: 0px;
+    color: white;
+}
+
+#anchor_home_icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
+.mySlides {
+    display: none;
+}
+
+.content {
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.photos {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid white;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+
+.buttons button {
+    font-family: 'Kalam', sans-serif;
+    border-radius: 25px;
+    background-color: pink;
+    color: white;
+    border: 2px solid white;
+
+    height: 50px;
+    width: 100px;
+    margin-right: 25px;
+}
+
+.buttons button:hover{
+    color: #ff00ce;
+
+    animation: bump 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+#pp_button {
+    font-family: 'Kalam', sans-serif;
+    border: none;
+    background: none;
+    color: white;
+
+    height: 50px;
+    width: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#pp_button:hover{
+    color: #ff00ce;
+    
+    animation: bump 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.audio_control {
+    border-radius: 25px;
+    width: 300px;
+    height: 30px;
+    background-color: pink;
+    color: white;
+    border: 2px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    float:right;
+}
+
+input {
+    background-color: #d60000;
+    color: pink;
+    cursor: pointer;
+    width: 15rem;
+    margin-right: 30px;
+}
+
+audio {
+    height: 0;
+    overflow: hidden;
+    float: right;
+}
+
+
+#anchor_home_icon:hover {
+    /* Apply a bumpy effect using keyframes */
+    animation: bump 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+@keyframes bump {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    50% { transform: scale(0.9); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
