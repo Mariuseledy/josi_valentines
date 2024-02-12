@@ -13,6 +13,7 @@
         <script src="../scripts/image_navigation.js" defer></script>
         <script src="../scripts/hearts_animation.js" defer></script>
         <script src="../scripts/image_hover.js" defer></script>
+        <script src="../scripts/change_page.js" defer></script>
     </head>
     <body>
         <div class="content">
@@ -39,9 +40,7 @@
         </div>
 
         <img id="anchor_main" src="../images/peach-goma.png">
-        <a href="./landing.html"> <!-- aici -->
-            <img src="../images/home.png" alt="Clickable Image" id="anchor_home_icon" onmouseover="changeImage()" onmouseout="restoreImage()">
-        </a>
+        <img src="../images/home.png" alt="Clickable Image" id="anchor_home_icon" onmouseover="changeImage()" onmouseout="restoreImage()" onclick="goToLandingPage()">
 
         <audio id="audioPlayer" controls autoplay>
             <source src="../music/main_song.mp3" type="audio/mp3">
